@@ -1,0 +1,15 @@
+server:
+  port: 9093
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: DESIERTO-USER-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
